@@ -1,0 +1,5 @@
+packages:
+ - front-ends/*
+ - back-ends/*
+ - packages/*
+ - CLIs/*
