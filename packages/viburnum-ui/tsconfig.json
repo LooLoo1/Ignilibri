@@ -1,26 +1,86 @@
+// {
+// 	"compilerOptions": {
+// 		"target": "es5",
+// 		"jsx": "react-jsx",
+// 		"allowJs": true,
+// 		"esModuleInterop": true,
+// 		"allowSyntheticDefaultImports": true,
+// 		"module": "esnext",
+// 		// "module": "CommonJS",
+// 		"outDir": "./dist",
+
+// 		// *.d.ts
+// 		"declaration": true,
+// 		"emitDeclarationOnly": true,
+// 		"declarationMap": true,
+
+
+
+
+    
+//     "lib": ["esnext"],
+//     "skipLibCheck": true,
+//     "strict": true,
+//     "forceConsistentCasingInFileNames": true,
+//     "noImplicitReturns": true,
+//     "noFallthroughCasesInSwitch": true,
+//     "noUnusedLocals": true,
+//     "noUnusedParameters": true,
+//     "noImplicitThis": true,
+//     "noImplicitAny": true,
+//     "strictNullChecks": true,
+//     "alwaysStrict": true,
+//     "moduleResolution": "bundler",
+//     // "moduleResolution": "node",
+
+
+//     "resolveJsonModule": true,
+//     "isolatedModules": true,
+//     "incremental": true,
+
+// 	},
+// 	"include": ["."], // ["src/**/*"] --> // ["exports/**/*"]
+// 	"exclude": ["dist", "node_modules", "**/*.spec.ts"]
+// }
+
 {
   "compilerOptions": {
-    "lib": ["dom", "dom.iterable", "esnext"],
-    "allowJs": true,
-    "skipLibCheck": true,
-    "strict": true,
-    "noEmit": true,
-    "esModuleInterop": true,
-    "module": "esnext",
-    "moduleResolution": "bundler",
-    "resolveJsonModule": true,
-    "isolatedModules": true,
-    "jsx": "preserve",
-    "incremental": true,
-    "plugins": [
-      {
-        "name": "next"
-      }
-    ],
-    "paths": {
-      "components/*": ["./*"]
-    }
+    "target": "es5", // Target JavaScript version
+    "jsx": "react-jsx", // JSX compilation
+    "allowJs": true, // Enable JavaScript files as input for compilation
+    
+    "esModuleInterop": true, // Enable interoperability between CommonJS and ES modules
+    "allowSyntheticDefaultImports": true, // Allow default imports from ES6 modules
+
+    "module": "esnext", // Use ESNext modules for imports and exports
+    "outDir": "./dist", // Output directory for generated JavaScript files
+    "lib": ["esnext"], // Enable additional library imports
+
+    // Generate declaration files (*.d.ts)
+    "declaration": true,
+    "emitDeclarationOnly": true, // Only emit declaration files, not JavaScript files
+    "declarationMap": true, // Generate declaration maps (*.d.ts.map) for better IDE support
+    
+    "skipLibCheck": true, // Skip checking system-provided JS libraries
+    "strict": true, // Enforce strict type checking
+    "forceConsistentCasingInFileNames": true, // Require consistent case in file names
+    "noImplicitReturns": true, // Require explicit return statements in functions
+    "noFallthroughCasesInSwitch": true, // Require explicit `break` or `return` statements in switch blocks
+    "noUnusedLocals": true, // Require unused variables to be explicitly declared
+    "noUnusedParameters": true, // Require unused function parameters to be explicitly declared
+    "noImplicitThis": true, // Require `this` keyword to be explicitly defined in functions
+    "noImplicitAny": true, // Require explicit type annotations for variables
+    "strictNullChecks": true, // Enforce strict null checks
+    "alwaysStrict": true, // Enable always strict mode, which prohibits `any` type
+    "moduleResolution": "bundler", // Resolve modules using a bundler-like resolution strategy
+    "resolveJsonModule": true, // Resolve JSON modules
+    "isolatedModules": true, // Enable isolated modules that can't directly access each other
+    "incremental": true // Enable incremental compilation for faster rebuilds
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],
-  "exclude": ["node_modules"]
+  // Paths to include for compilation
+  "include": ["exports/**/*"], // ["exports/**/*"]
+  // "include": ["."], // ["exports/**/*"]
+
+  // Paths to exclude from compilation
+  "exclude": ["dist", "node_modules", "**/*.spec.ts"]
 }
