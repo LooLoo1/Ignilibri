@@ -2,11 +2,14 @@
 	"name": "frost-gem",
 	"version": "1.0.0",
 	"description": "Folder and files PowerShell generator",
-	"main": "src/index.ts",
+	"main": "./index.js",
 	"bin": {
-		"fg": "ts-node src/index.ts"
+		"fg": "./dist/index.js"
 	},
-	"scripts": {},
+	"scripts": {
+		"dev": "tsc -w",
+		"link-cli": "(pnpm unlink frost-gem || true) && pnpm link frost-gem"
+	},
 	"keywords": [],
 	"author": "Vitalii Petriv",
 	"license": "ISC",
@@ -14,5 +17,8 @@
 		"@types/node": "^20.11.10",
 		"ts-node": "^10.9.2",
 		"typescript": "^5.3.3"
+	},
+	"dependencies": {
+		"frost-gem": "^1.0.0"
 	}
 }
