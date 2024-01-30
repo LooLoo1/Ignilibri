@@ -1,3 +1,6 @@
 node_modules
 dist
 build
+
+# I did it just for fun :D
+.gitignore
