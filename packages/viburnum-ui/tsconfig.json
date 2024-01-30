@@ -1,48 +1,3 @@
-// {
-// 	"compilerOptions": {
-// 		"target": "es5",
-// 		"jsx": "react-jsx",
-// 		"allowJs": true,
-// 		"esModuleInterop": true,
-// 		"allowSyntheticDefaultImports": true,
-// 		"module": "esnext",
-// 		// "module": "CommonJS",
-// 		"outDir": "./dist",
-
-// 		// *.d.ts
-// 		"declaration": true,
-// 		"emitDeclarationOnly": true,
-// 		"declarationMap": true,
-
-
-
-
-    
-//     "lib": ["esnext"],
-//     "skipLibCheck": true,
-//     "strict": true,
-//     "forceConsistentCasingInFileNames": true,
-//     "noImplicitReturns": true,
-//     "noFallthroughCasesInSwitch": true,
-//     "noUnusedLocals": true,
-//     "noUnusedParameters": true,
-//     "noImplicitThis": true,
-//     "noImplicitAny": true,
-//     "strictNullChecks": true,
-//     "alwaysStrict": true,
-//     "moduleResolution": "bundler",
-//     // "moduleResolution": "node",
-
-
-//     "resolveJsonModule": true,
-//     "isolatedModules": true,
-//     "incremental": true,
-
-// 	},
-// 	"include": ["."], // ["src/**/*"] --> // ["exports/**/*"]
-// 	"exclude": ["dist", "node_modules", "**/*.spec.ts"]
-// }
-
 {
   "compilerOptions": {
     "target": "es5", // Target JavaScript version
@@ -77,9 +32,9 @@
     "isolatedModules": true, // Enable isolated modules that can't directly access each other
     "incremental": true // Enable incremental compilation for faster rebuilds
   },
+
   // Paths to include for compilation
   "include": ["exports/**/*"], // ["exports/**/*"]
-  // "include": ["."], // ["exports/**/*"]
 
   // Paths to exclude from compilation
   "exclude": ["dist", "node_modules", "**/*.spec.ts"]
