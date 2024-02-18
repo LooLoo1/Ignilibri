@@ -7,7 +7,9 @@
 		"fg": "./dist/index.js"
 	},
 	"scripts": {
-		"dev": "tsc -w",
+		"watch": "tsc -w",
+		"dev": "nodemon --exec ts-node src/index.ts",
+		"build": "tsc",
 		"link-cli": "(pnpm unlink frost-gem || true) && pnpm link frost-gem"
 	},
 	"keywords": [],
@@ -15,7 +17,9 @@
 	"license": "ISC",
 	"devDependencies": {
 		"@types/node": "^20.11.10",
+		"nodemon": "^3.0.2",
 		"ts-node": "^10.9.2",
+		"tsx": "^4.7.0",
 		"typescript": "^5.3.3"
 	},
 	"dependencies": {
